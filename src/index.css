@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html, body, #root, .fullHeight{
+  height: 100%;
+}
+
+.contenedor{
+  height: 99%;
+}
+
+.dx-visibility-change-handler{
+  display: flex;
+  justify-content: center;
+}
+#gauge{
+  height: 15%;
+}
+#linearGauge{
+  height: 20%;
+  width: 97.5%;
+}
+#paradasGauge{
+  height: 9%;
+}
+#circularGauge{
+  min-height:50%;
+}
+#gaugeTarjeta{
+  height:100%;
+}
+.graficoRitmos{
+  min-height: 25%;
+}
+
+.leyendaRitmos{
+  font-size: 10px;
+  margin-left: 10px;
+  display: flex;
+  /* justify-content: center; */
+}
+
+.leyenda{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  padding-left: 10%;
+}
+
+.unidades{
+  width: 10%;
+}
+
+.leyendaPrincipal{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  padding-left: 20%;
+}
+
+.unidadesPrincipal{
+  width: 30%;
+}
+
+.unidades span, .unidadesPrincipal span{
+  float: right;
+  margin-right: 10px;
+}
+
+.imgLeyenda{
+  width: 10px;
+  height: 14px;
+}
+
+.textoLeyenda{
+  margin-right: 5%;
+  margin-left: 1%;
+}
+
+/*css del datepicker*/
+
+
+.datePickerContainer2 > div > div > input,
+.textFieldContainer > div > div > input,
+.textFieldMultilineContainer > div > div
+{
+    padding: 7.5px 14px !important;
+}
+
+.datePickerContainer2 > div > div {
+   padding-right: 0px !important;
+   background-color: white;
+   border-radius: 5px;
+   font-size: 14px;
+   width: 160px;
+}
+
+.MuiFormControl-marginNormal {
+margin-top: 5px !important;
+margin-left: 5px !important;
+width: 160px !important;
+}
+
+.MuiInput-formControl{
+font-size: 12px !important;
+}
+
+.MuiInput-underline:hover:not(.Mui-disabled):before{
+  border-bottom: 1px solid #004f9f !important;
+} 
+.MuiInput-underline:after {
+border-bottom: none;
+}
+
+.selectTurnos, .selectEquipos{
+  margin-top: 10px;
+  margin-right: 10px;
+  min-width: 158px;
+  width: "fitContent";
+}
+
+.selectSinoptico{
+  margin-right: 10px;
+  width: 250px;
+}
+
+#horaInicio {
+  text-align: center;
+}
+
+#duracion {
+  text-align: right;
+}
+
+.multicolor-bar {
+  background-color: #CBC5CF;
+  margin-left: 12px;
+  margin-right: 12px;
+  height: 15px;
+}
+
+.values{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.divEscalaParadas, .divRallasEscala{
+  height: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 8px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.divGrafParadas{
+  width: 98%;
+  height: 9%;
+}
+
+.numeroEscala{
+    white-space: pre;
+    color: #767676;
+    font-family: 'Segoe UI', 'Helvetica Neue', 'Trebuchet MS', Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    cursor: default;
+}
+
+.rallaEscala{
+  color: 'rgb(83, 104, 120)';
+  font-size: 6px;
+  font-weight: 900;
+  margin-left: 2px;
+  margin-right: 6px;
+}
+
+/*css del modal de detalle de orden*/
+
+.percentageModal{
+  width: 40% !important;
+  margin: 0 auto;
+}
+
+
+.tarjetaDetalle{
+  height: fit-content !important;
+  box-shadow: 1px 6px 28px rgba(0,0,0,0.25), 1px 10px 10px rgba(151, 110, 110, 0.22)!important;
+  width: 70%;
+}
+
+@media (max-width: 1490px) {
+  .tarjetaDetalle {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .tarjetaDetalle {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1120px) {
+  .tarjetaDetalle {
+    width: 95%;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .tarjetaDetalle {
+    width: 100%;
+  }
+}
+
+.divTarjetaDetalle
+{
+    display: flex;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: center;
+}
+
+td{
+  border: 0!important;
+  color: #777!important;
+}
+
+.GrafParadasDetalle{
+  width: 100%;
+  height: 100%;
+}
+
+#linearGaugeDetalle{
+  width: 100%;
+  height: 20%;
+}
+
+.MuiCardContent-root{
+  overflow: auto;
+  padding: 7px !important;
+  display: flex;
+}
+.MuiTableCell-root{
+  padding: 4px 56px 4px 24px !important;
+}
+
+.MuiTableCell-head-221{
+  font-weight: 600!important;
+  }
+
+  th{
+    color: rgba(0, 0, 0, 0.54) !important;
+    font-size: 0.75rem !important;
+    font-weight: 500 !important;
+  }
+
+  .textoLeyendaDetalle{
+    margin-right: 5%;
+    margin-left: 0.3%;
+  }
+
+  .unidades{
+    margin-right: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
